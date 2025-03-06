@@ -14,7 +14,12 @@
       theme: {
         extend: {
           colors: {
-            'nature-primary' : '#88C057',
+            'nature-primary' : '#179800',
+            'bg-primary' : '#EFEBE3' ,
+            'bg-dawat' : '#115414' ,
+            'bg-gate' : '#102861',
+            'button1' : '#63B76D' ,
+            'button2' : "#2A4D97" ,
           }
         }
       }
@@ -28,10 +33,10 @@
 </style>
     <title>Nature's Platter</title>
 </head>
-<body class="sora-font max-w-screen-xl mx-auto lg:px-28">
+<body class="sora-font w-full lg:px-28 ">
     <header>
         <nav class="flex space-x-6 space-y-3">
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 border-b-2 border-green-500 p-4 lg:border-hidden ">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -65,17 +70,25 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
+            <div class="navbar-end space-x-3">
               <i class="fa-thin fa-cart-shopping"></i>
-              <a class="btn bg-white border-green-800">Login</a>
-              <a class="btn text-white bg-green-600">Register</a>
+              <h2 class="hidden lg:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M9.5 17A7.5 7.5 0 109.5 2a7.5 7.5 0 000 15z" />
+              </svg>
+              </h2>
+              <h2 class="hidden lg:block"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2m0 0L7 13h10l1.6-6H5.4m.4 0L5 3m5 16a1 1 0 100 2 1 1 0 000-2zm7 0a1 1 0 100 2 1 1 0 000-2z" />
+              </svg>
+            </h2>
+              <a class=" hidden lg:block btn bg-white border-green-800 px-8 py-4">Login</a>
+              <a class=" hidden lg:block btn  text-white bg-green-600 px-8 py-4 animate-pulse">Register</a>
             </div>
           </div>
         </nav>
     </header>
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
-    <section class=" px-2 py-5 lg:py-16" >
-      <div class="flex flex-col justify-center gap-3">
+    <main class="w-full px-16">
+    <section class="px-2 py-5 lg:py-16 w-full" >
+      <div class=" flex flex-col justify-center gap-3">
        <div>
         <h1 class=" text-5xl font-bold text-center">Freshness <span class="text-green-500">You Can </br>
           Count</span> On, Prices You’ll Love!</h1>
@@ -84,7 +97,7 @@
         </div>
        </div>
        <div>
-        <img src="c2-assets/hero-vegetables.png">
+        <img  src="c2-assets/hero-vegetables.png">
        </div>
 
 
@@ -95,13 +108,303 @@
 
       </div>
     </section>
+    <section class=" mb-8">
+      <h1 class="text-3xl text-nature-primary font-semibold py-5">Services</h1>
+    <div class=" flex-row gap-5 space-y-5  lg:flex lg:space-y-0 ">
+      <div class=" flex flex-col flex-1 items-center bg-bg-primary px-8 py-8 rounded-lg text-center ">
+        <div class="bg-white rounded-full p-3 flex items-center justify-center mx-auto "> 
+          <img class="rounded-full" src="c2-assets/service.png"> 
+        </div>
+        <h3 class="text-xl font-semibold">24/7 Services</h3>
+        <p class="text-xs py-2 text-gray-600">Ready to deliver to your door anytime!</p>
+
+      </div>
+      <div class="flex flex-col flex-1 items-center bg-bg-primary px-8 py-8 rounded-lg text-center">
+        <div class="bg-white rounded-full p-3 flex items-center justify-center mx-auto "> 
+          <img class="rounded-full" src="c2-assets/delivery.png"> 
+        </div>
+        <h3 class="text-xl font-semibold">Fast Delivery</h3>
+        <p class="text-sm py-2 text-gray-600">We ensure the fastest delivery anywhere and everywhere!</p>
+      </div>
+      <div class="flex flex-col flex-1 items-center bg-bg-primary px-8 py-8 rounded-lg text-center">
+        <div class="bg-white rounded-full p-3 flex items-center justify-center mx-auto "> 
+          <img class="rounded-full" src="c2-assets/healthy.png"> 
+        </div>
+        <h3 class="text-xl font-semibold">Healthy Products</h3>
+        <p class="text-sm py-2 text-gray-600">Our authentic farm-grown products maintain quality each time!</p>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    </section>
+    <section class="bg-bg-primary p-8 w-full">
+      <h2 class="text-3xl font-bold mb-8 ">Popular Products</h2>
+      <div class="flex flex-col lg:flex-row gap-4 items-stretch">
+        <div class="w-72 h-full" >
+        <div class="relative bg-gradient-to-br from-green-600 to-white rounded-lg px-4 pt-4 pb-20 ">
+          <div>
+            <div class=" text-white rounded-full w-16 h-16 flex items-center justify-center mb-4">
+              <span class="text-3xl font-extrabold">30% off</span>
+            </div>
+            <p class="text-sm text-gray-700 pb-5">Discover a world of treats, toys, and essentials handpicked for you!</p>
+          </div>
+          <button class="bg-white text-black py-2 px-4 rounded-lg">Buy Now</button>
+          <img class="absolute right-0 bottom-0 size-36" src="c2-assets/vegetable-offer.png">
+        </div>
+      </div>
+        <div class="grid gap-4 grid-cols-2 grid-rows-4 lg:grid-cols-3 lg:grid-rows-3 h-full ">
+          <div class="bg-white rounded-lg p-3 pb-0">
+            <div class="flex gap-3">
+            <div>
+              <img class="bg-bg-primary rounded-lg" src="c2-assets/tomato.png">
+            </div>
+            <div class="pt-2">
+              <p class="text-xs">⭐ 4.5</p>
+              <h3>Tomato 1 KG</h3>
+              <p class="text-xs">$39.99</p>
+            </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-3 ">
+            <div class="flex gap-3">
+            <div>
+              <img class="bg-bg-primary rounded-lg" src="c2-assets/onion.png">
+            </div>
+            <div class="pt-2">
+              <p class="text-xs">⭐ 4.5</p>
+              <h3>Onion 1 KG</h3>
+              <p class="text-xs">$39.99</p>
+            </div>
+            </div>
+          </div>
+          <div class=" hidden lg:block bg-white rounded-lg p-3 flex items-center gap-3">
+            <div class="flex gap-3">
+            <div>
+              <img class="bg-bg-primary rounded-lg" src="c2-assets/potato.png">
+            </div>
+            <div class="pt-2" >
+              <p class="text-xs">⭐ 4.5</p>
+              <h3>Potato 1 KG</h3>
+              <p class="text-xs">$39.99</p>
+            </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg p-3 ">
+            <div class="flex gap-3">
+            <div>
+              <img class="bg-bg-primary rounded-lg" src="c2-assets/potato.png">
+            </div>
+            <div class="pt-2">
+              <p class="text-xs">⭐ 4.5</p>
+              <h3>Potato 1 KG</h3>
+              <p class="text-xs">$39.99</p>
+            </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 ">
+          <div class="flex gap-3">
+          <div class="pt-2">
+            <img class="bg-bg-primary rounded-lg" src="c2-assets/tomato.png">
+          </div>
+          <div class="pt-2">
+            <p class="text-xs">⭐ 4.5</p>
+            <h3>Tomato 1 KG</h3>
+            <p class="text-xs">$39.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 ">
+          <div class="flex gap-3">
+          <div>
+            <img class="bg-bg-primary rounded-lg" src="c2-assets/onion.png">
+          </div>
+          <div class="pt-2">
+            <p class="text-xs">⭐ 4.5</p>
+            <h3>Onion 1 KG</h3>
+            <p class="text-xs">$39.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 ">
+          <div class="flex gap-3">
+          <div>
+            <img class="bg-bg-primary rounded-lg" src="c2-assets/onion.png">
+          </div>
+          <div class="pt-2">
+            <p class="text-xs">⭐ 4.5</p>
+            <h3>Onion 1 KG</h3>
+            <p class="text-xs">$39.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 ">
+          <div class="flex gap-3">
+          <div>
+            <img class="bg-bg-primary rounded-lg" src="c2-assets/potato.png">
+          </div>
+          <div class="pt-2">
+            <p class="text-xs">⭐ 4.5</p>
+            <h3>Potato 1 KG</h3>
+            <p class="text-xs">$39.99</p>
+          </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg p-3 ">
+          <div class="flex gap-3">
+          <div>
+            <img class="bg-bg-primary rounded-lg" src="c2-assets/tomato.png">
+          </div>
+          <div class="pt-2">
+            <p class="text-xs">⭐ 4.5</p>
+            <h3>Tomato 1 KG</h3>
+            <p class="text-xs">$39.99</p>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <section class="mt-10">
+      <div class=" relative bg-gradient-to-r from-green-200 to-bg-primary rounded-lg px-20 py-6 lg:flex justify-between" >
+      <div >
+      <img class="hidden lg:block absolute rounded-full size-48 -top-3 " src="c2-assets/Download AI generated Stir-Fried Noodles with Vibrant Vegetables on a White Plate on transparent background_ for free.jpg">
+    </div>
+    <div class=" flex flex-col justify-center ">
+      <div>
+      <h1 class="font-extrabold text-5xl text-bg-dawat text-center">🍴 Global Flavors 🍴</h1>
+      <p class="text-center font-extralight text-sm pb-4 ">Explore recipes and shop ingredients to savor food from around the world!</p>
+    </div>
+    <div class="text-center">
+      <button class="bg-white text-black font-semibold text-sm  px-6 py-2 rounded-lg text-center motion-safe:animate-pulse">Explore Now <span class="text-nature-primary">➜</span> </button>
+    </div>
+    </div>
+  </div>
+    </section>
+
+    <section class="w-full mb-10">
+      <h1 class="text-nature-primary font-bold text-2xl pt-10 pb-8">Arrival & Offers</h1>
+      <div class="flex flex-col lg:flex-row gap-3 justify-center">
+     <div class="flex gap-3 bg-bg-dawat rounded-xl p-4  ">
+     <div class="flex flex-col items-start w-1/2 pt-10" >
+      <img class=" mt-4 pb-5 ml-2"	src="c2-assets/dawat-logo.png">
+      <button class="bg-button1 px-6 py-3 rounded-lg ml-6 text-white font-bold motion-safe:animate-pulse"> Cook Exotic Dishes</button>
+      <h2 class="text-white text-xl pt-5 ml-8 ">UP TO <span class="font-bold text-white">20% OFF</span></h2>
+
+     </div>
+     <div>
+      <img class=" pt-5" src="c2-assets/dawat-mock-up.png">
+
+
+
+     </div>
+     </div>
+     
+     <div class=" flex gap-5 bg-bg-gate rounded-xl p-4" >
+      <div class="flex flex-col items-start w-1/2 pt-5" >
+      <img class="pb-3 ml-2"	src="c2-assets/india-gate-logo.png">
+      <button class="bg-button2 px-6 py-3 rounded-lg ml-4 text-white font-bold motion-safe:animate-pulse">World's No.1 Rice</button>
+      <h2 class="text-white pt-4 ml-4 text-xl ">UP TO <span class="font-bold text-white">40% OFF</span></h2>
+
+     </div>
     
+     <div class="flex items-end">
+      <img class="pt-5" src="c2-assets/india-gate-mock-up.png">
+
+     </div>
+    </div>
+    </div>
 
 
 
 
 
+
+
+
+     </div>
+
+
+
+
+
+
+
+
+      
+    </section>
+   
+    <section class="relative mt-28 ml-4 justify-center"> 
+      <div class="absolute  -left-5 -right-3 -top-20 lg:-top-12  bg-bg-primary rounded-lg flex flex-col lg:flex-row justify-between px-8 py-8 ">
+        <div> 
+         <img src="c2-assets/vegetable-busket.png">
+        </div>
+        <div class="justify-center mt-4"> 
+         <h1 class="text-4xl text-center  text-nature-primary font-bold pt-4">Get Grocery News!</h1>
+         <p class="text-black font-light pt-4 mb-5">Exclusive training tips, ticks, product deals and more.</p>
+         <input type="text" placeholder="Enter email..." class="mb-5 text-white rounded-lg px-12 lg:px-32 py-6"></br>
+         <button class="bg-nature-primary rounded-xl px-8 py-3 mb-5 text-white ">Subscribe</button>
+        </div>
+     
+ 
+ 
+ 
+       </div>
+    </section>
+  
     </main>
+    <footer class=" bg-nature-primary text-white py-30 pt-32 mt-80 ">
+    
+      <div class="w-10/12 mx-auto flex flex-col gap-0 lg:flex-row justify-between mt-40 lg:mt-0 lg:gap-36">
+        <div class="lg:mb-8 mt-36">
+          <img src="c2-assets/logo-footer.png">
+          <p class="text-white text-xs font-light">Discover a world of treats, toys, and </br> essentials handpicked for your furry </br> friends</p>
+        </div>
+        <div class="flex flex-col mb-8 mt-4 lg:mt-36">
+          <ul >
+          <li class="pb-4"><a class="font-light text-sm">Product</a></li>
+          <li class="pb-4"><a class="font-light text-sm">Services</a></li>
+          <li><a class="font-light text-sm">Contact</a></li>
+        </ul>
+        </div>
+        <div class="mb-8 lg:mt-36">
+        <h2>Follow Us</h2>
+        <div class="flex gap-3 w-2/5">
+      
+        <a class="text-xs"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3.5a5 5 0 00-5 5V10H6v4h3.5v8h4v-8H18v-4h-3.5V7a1.5 1.5 0 011.5-1.5H18V2z"/>
+        </svg></a>
+        <a class="text-xs"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 7.5h.01M12 8a4 4 0 110 8 4 4 0 010-8z" />
+        </svg></a>
+        <a class="text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" class="w-6 h-6">
+          <path d="M21.5 8.5a2.5 2.5 0 00-1.76-1.76C18.19 6.5 12 6.5 12 6.5s-6.19 0-7.74.24a2.5 2.5 0 00-1.76 1.76A26.2 26.2 0 002 12c0 1.37.12 2.73.5 4.04a2.5 2.5 0 001.76 1.76C5.81 18.5 12 18.5 12 18.5s6.19 0 7.74-.24a2.5 2.5 0 001.76-1.76A26.2 26.2 0 0022 12c0-1.37-.12-2.73-.5-4.04z"/>
+          <path d="M9 16V8l6 4-6 4z" fill="black"/>
+        </svg></a>
+      </div>
+        
+        
+        
+        
+        
+        
+        
+
+
+
+        </div>
+      </div>
+
+    </footer>
     
 </body>
 </html>
